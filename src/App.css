@@ -169,10 +169,10 @@ input[type='number'] {
   font-weight: bold;
 }
 .credit {
-  color: green;
+  color: #2ecc71;
 }
 .debit {
-  color: red;
+  color: #c0392b;
 }
 .toggle-btn {
   padding: 5px 10px;
@@ -183,10 +183,10 @@ input[type='number'] {
   border-radius: 5px;
 }
 .credit-btn {
-  background-color: green;
+  background-color: #2ecc71;
   color: white;
 }
 .debit-btn {
-  background-color: red;
+  background-color: #c0392b;
   color: white;
 }

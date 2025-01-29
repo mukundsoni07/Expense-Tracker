@@ -15,6 +15,7 @@ export const AddTransaction = () => {
       id: Math.floor(Math.random() * 100000000),
       text,
       amount: isCredit ? Math.abs(amount) : -Math.abs(amount),
+      isCredit,
     }
 
     addTransaction(newTransaction);
