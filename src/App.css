@@ -155,3 +155,38 @@ input[type='number'] {
     width: 300px;
   }
 }
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f3f3f3;
+  border-radius: 5px;
+}
+.toggle-label {
+  font-weight: bold;
+}
+.credit {
+  color: green;
+}
+.debit {
+  color: red;
+}
+.toggle-btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.credit-btn {
+  background-color: green;
+  color: white;
+}
+.debit-btn {
+  background-color: red;
+  color: white;
+}
