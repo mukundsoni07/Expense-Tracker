@@ -16,7 +16,7 @@ export const GlobalProvider = ({ children }) => {
   // GET Transactions
   const getTransactions = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/transactions');
+      const res = await axios.get('https://expense-tracker-s93b.onrender.com/transactions');
       dispatch({
         type: 'GET_TRANSACTIONS',
         payload: res.data,
@@ -32,7 +32,7 @@ export const GlobalProvider = ({ children }) => {
   // DELETE Transaction
   const deleteTransaction = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/transactions/${id}`);
+      await axios.delete(`https://expense-tracker-s93b.onrender.com/transactions/${id}`);
       dispatch({
         type: 'DELETE_TRANSACTION',
         payload: id,
@@ -48,7 +48,7 @@ export const GlobalProvider = ({ children }) => {
   // ADD Transaction
   const addTransaction = async (transaction) => {
     try {
-      const res = await axios.post('http://localhost:8080/transactions', transaction);
+      const res = await axios.post('https://expense-tracker-s93b.onrender.com/transactions', transaction);
       dispatch({
         type: 'ADD_TRANSACTION',
         payload: res.data,
